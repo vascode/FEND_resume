@@ -206,6 +206,11 @@ span {
   padding-bottom: 5%;
 }
 
+#main {
+  max-width: 1000px;
+  margin: auto;
+}
+
 @media only screen and (min-width: 750px) {
   #skills-h3,
   .biopic {
