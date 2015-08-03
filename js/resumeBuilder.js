@@ -194,10 +194,14 @@ education.display = function(){
 		$("#education").append(HTMLschoolStart);
 
 		var formattedTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[course].title);
-		$(".education-entry:last").append(formattedTitle);
+		//$(".education-entry:last").append(formattedTitle);
 
 		var formattedSchool = HTMLonlineSchool.replace("%data%", education.onlineCourses[course].school);
-		$(".education-entry:last").append(formattedSchool);
+		//$(".education-entry:last").append(formattedSchool);
+
+		var formattedTitleSchool = formattedTitle + formattedSchool;
+		$(".education-entry:last").append(formattedTitleSchool);
+
 
 		var formattedDate = HTMLonlineDates.replace("%data%", education.onlineCourses[course].dates);
 		$(".education-entry:last").append(formattedDate);
