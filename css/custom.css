@@ -2,12 +2,21 @@
 	font-size: 20px;
 }
 
-.row {
+.contact-item {
+	padding: 5px 0 5px 3px;
+}
+
+.category{
+	padding-left: 0;
+	margin-top: 10px;
+}
+
+._row {
 	width: 100%;
 	max-width: 1000px;
 	margin: auto;
 	display: flex;
-	overflow: auto;
+	/*overflow: auto;*/
 }
 
 .col-1 {

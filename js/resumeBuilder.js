@@ -1,7 +1,7 @@
 var bio = {
 	"name": "Seokwoo Yoon",
 	"role": "Web developer",
-	"WelcomeMessage":"Welcome! I have been working as Field application engineer for 5 years, and now am transitioning to Front-end web developer.",
+	"WelcomeMessage":"Welcome! I have been working as Field application engineer in Wi-Fi & Bluetooth field for last 5 years, and now am transitioning to Front-end web developer. I am very excited!",
 	"contacts": {
 		"mobile":"(440) 941-6699",
 		"email":"vascodepssn@gmail.com",
@@ -37,11 +37,11 @@ bio.display = function(){
 	var formattedTwitter = HTMLtwitter.replace("%data%", bio.contacts.twitter);
 	var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location);
 
-	$("#topContacts").append(formattedMobile);
-	$("#topContacts").append(formattedEmail);
-	$("#topContacts").append(formattedGithub);
-	$("#topContacts").append(formattedTwitter);
-	$("#topContacts").append(formattedLocation);
+	$("#topContacts ul").append(formattedMobile);
+	$("#topContacts ul").append(formattedEmail);
+	$("#topContacts ul").append(formattedGithub);
+	$("#topContacts ul").append(formattedTwitter);
+	$("#topContacts ul").append(formattedLocation);
 
 
 
