@@ -1,7 +1,7 @@
 var bio = {
 	"name": "Seokwoo Yoon",
 	"role": "Web developer",
-	"WelcomeMessage":"Welcome to Yoon's website",
+	"WelcomeMessage":"Welcome! I have been working as Field application engineer for 5 years, and now am transitioning to Front-end web developer.",
 	"contacts": {
 		"mobile":"(440) 941-6699",
 		"email":"vascodepssn@gmail.com",
@@ -21,6 +21,16 @@ bio.display = function(){
 	$("#header").prepend(formattedRole);
 	$("#header").prepend(formattedName);
 
+
+
+
+
+	var formattedBioPic = HTMLbioPic.replace("%data%", bio.bioPic);
+	$("#bioPic").append(formattedBioPic);
+
+	var formattedMsg = HTMLwelcomeMsg.replace("%data%", bio.WelcomeMessage);
+	$("#aboutMe").append(formattedMsg);
+
 	var formattedMobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
 	var formattedEmail = HTMLemail.replace("%data%", bio.contacts.email);
 	var formattedGithub = HTMLgithub.replace("%data%", bio.contacts.github);
@@ -33,13 +43,9 @@ bio.display = function(){
 	$("#topContacts").append(formattedTwitter);
 	$("#topContacts").append(formattedLocation);
 
-	var formattedBioPic = HTMLbioPic.replace("%data%", bio.bioPic);
-	$("#header").append(formattedBioPic);
-
-	var formattedMsg = HTMLwelcomeMsg.replace("%data%", bio.WelcomeMessage);
-	$("#header").append(formattedMsg);
 
 
+/*
 	if (bio.skills.length >  0) {
 		$("#header").append(HTMLskillsStart);
 
@@ -50,6 +56,7 @@ bio.display = function(){
 			$("#skills").append(HTMLskills.replace("%data%", bio.skills[i]));
 		}
 	}
+	*/
 };
 
 var work = {
