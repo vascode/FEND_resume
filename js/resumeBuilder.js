@@ -1,5 +1,5 @@
 var bio = {
-	"name": "seokwoo yoon",
+	"name": "Seokwoo Yoon",
 	"role": "Web developer",
 	"WelcomeMessage":"Welcome to Yoon's website",
 	"contacts": {
@@ -202,7 +202,6 @@ education.display = function(){
 		var formattedTitleSchool = formattedTitle + formattedSchool;
 		$(".education-entry:last").append(formattedTitleSchool);
 
-
 		var formattedDate = HTMLonlineDates.replace("%data%", education.onlineCourses[course].dates);
 		$(".education-entry:last").append(formattedDate);
 
@@ -212,14 +211,14 @@ education.display = function(){
 	}
 }
 
-//displayBio();
-//displayWork();
+
+//calling functions for page layout starts here.
 bio.display();
 work.display();
 projects.display();
 education.display();
 
-$("#main").append(internationalizeButton);
+//$("#main").append(internationalizeButton);
 
 function inName(oldName) {
 	var finalName;
