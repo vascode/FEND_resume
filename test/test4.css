@@ -1,0 +1,3 @@
+.progress.ui-progressbar {position:relative;height:2em;}
+.progress span {position:static;margin-top:-2em;text-align:center;display:block;line-height:2em;padding-left:10px;padding-right:10px;}
+.progress[aria-valuenow="0"] span {margin-top:0px;}
