@@ -16,13 +16,10 @@ div.inputDiv  {
 	float: left;
 	width: 42%;
 	min-height: 100%;
-	border: Navy 1px dotted;
-	margin: 14px;
+	/*border: Navy 1px dotted;*/
+	margin: 0 0 0 50px;
 	padding: 10px;
 }
-
-
-
 
 
 
