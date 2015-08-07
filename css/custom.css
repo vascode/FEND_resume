@@ -21,8 +21,18 @@ div.inputDiv  {
 	padding: 10px;
 }
 
+#pbar0-label,
+#pbar1-label,
+#pbar2-label,
+#pbar3-label,
+#pbar4-label{
+	font-size: 20px;
+	color: blue;
+}
 
-
+.title{
+	font-size: 17px;
+}
 
 
 ._row {

@@ -26,35 +26,32 @@ var HTMLlocation = '<li class="contact-item"><i class="fa fa-map-marker"></i><sp
 var HTMLbioPic = '<img src="%data%" class="biopic">';
 var HTMLwelcomeMsg = '<span class="welcome-message">%data%</span>';
 
-var HTMLskillsStart = '<ul id="skills" class="flex-box"></ul>';
-var HTMLskills = '<li class="flex-item"><span class="lightGrey-text">%data%</span></li>';
-
 var HTMLworkStart = '<div class="work-entry"></div>';
-var HTMLworkEmployer = '<a href="#">%data%';
-var HTMLworkTitle = ' - %data%</a>';
+var HTMLworkEmployer = '<div class="title"><a href="#">%data%';
+var HTMLworkTitle = ' - %data%</a></div>';
 var HTMLworkDates = '<div class="date-text">%data%</div>';
 var HTMLworkLocation = '<div class="location-text">%data%</div>';
-var HTMLworkDescription = '<p><br>%data%</p>';
+var HTMLworkDescription = '<p><br>%data%</p><br>';
 
 var HTMLprojectStart = '<div class="project-entry"></div>';
-var HTMLprojectTitle = '<a href="#">%data%</a>';
+var HTMLprojectTitle = '<div class="title"><a href="#">%data%</a></div>';
 var HTMLprojectDates = '<div class="date-text">%data%</div>';
-var HTMLprojectDescription = '<p><br>%data%</p>';
+var HTMLprojectDescription = '<p><br>%data%</p><br/>';
 var HTMLprojectImage = '<img src="%data%">';
 
 var HTMLschoolStart = '<div class="education-entry"></div>';
-var HTMLschoolName = '<a href="#">%data%';
-var HTMLschoolDegree = ' -- %data%</a>';
+var HTMLschoolName = '<div class="title"><a href="#">%data%';
+var HTMLschoolDegree = ' -- %data%</a></div>';
 var HTMLschoolDates = '<div class="date-text">%data%</div>';
 var HTMLschoolLocation = '<div class="location-text">%data%</div>';
 var HTMLschoolMajor = '<em><br>Major: %data%</em>';
 
 var HTMLonlineClasses = '<br><h3>Online Classes</h3>';
 //var HTMLonlineTitle = '<a href="#">%data%';
-var HTMLonlineTitle = '<p>%data%';
-var HTMLonlineSchool = ' @ %data%</p>';
+var HTMLonlineTitle = '<div class="title">%data%';
+var HTMLonlineSchool = ' @ %data%</div>';
 var HTMLonlineDates = '<div class="date-text">%data%</div>';
-var HTMLonlineURL = '<br><a href="#">%data%</a>';
+var HTMLonlineURL = '<br><a href="#">%data%</a><br/>';
 
 var internationalizeButton = '<button>Internationalize</button>';
 var googleMap = '<div id="map"></div>';

@@ -9,7 +9,6 @@ var bio = {
 		"twitter":"@vascode",
 		"location":"Cleveland, OH"
 	},
-	"skills": ["HTML", "CSS", "Javascript", "Wi-Fi", "Bluetooth"],
 	"bioPic": "images/myPic.png"
 };
 
@@ -20,10 +19,6 @@ bio.display = function(){
 
 	$("#header").prepend(formattedRole);
 	$("#header").prepend(formattedName);
-
-
-
-
 
 	var formattedBioPic = HTMLbioPic.replace("%data%", bio.bioPic);
 	$("#bioPic").append(formattedBioPic);
@@ -44,39 +39,47 @@ bio.display = function(){
 	$("#topContacts ul").append(formattedLocation);
 };
 
-function skillDisplay(){
-	$( "#pbar0" ).progressbar({
-	  value: 37
-	});
-	$( "#pbar1" ).progressbar({
-	  value: 37
-	});
-
-    $( "#pbar2" ).progressbar({
-	  value: 37
-	});
-
-    $( "#pbar3" ).progressbar({
-	  value: 37
-	});
-
-
-/*
-
-	if (bio.skills.length >  0) {
-		$("#skills").append(HTMLskillsStart);
-
-		for (i=0; i<bio.skills.length; i++) {
-			formattedSkills = HTMLskills.replace("%data%", bio.skills[i]);
-			$("#skills").append(formattedSkills);
-
-			//$("#skills").append(HTMLskills.replace("%data%", bio.skills[i]));
+var skills = {
+	"skills":
+	[
+		{
+			"name": "HTML",
+			"ability": 60
+		},
+		{
+			"name": "CSS",
+			"ability": 50,
+		},
+		{
+			"name": "Javascript",
+			"ability": 40,
+		},
+		{
+			"name": "Wi-Fi",
+			"ability": 90,
+		},
+		{
+			"name": "Bluetooth",
+			"ability": 80,
 		}
-	}
-	*/
+	]
+}
 
+skills.display = function(){
+
+	for (skill in skills.skills){
+		var pbar = 'pbar' + skill;
+		var pbarLabel = 'pbar' + skill.toString() + '-label'
+
+		$("#"+pbar).progressbar({
+			value: skills.skills[skill].ability,
+			create: function(){
+				$("#"+pbarLabel).text(skills.skills[skill].name);
+				$("#"+pbar + "> div").css({ 'background': 'rgb(88, 185, 250)' });
+			}
+		});
+	}
 };
-skillDisplay();
 
 var work = {
 	"jobs":
@@ -130,6 +133,12 @@ var projects = {
 	"projects":
 	[
 		{
+			"title":"Garage Door Opener",
+			"dates":"2015",
+			"description":"Built upon Rasberry Pi to monitor and control garage door by using Pi camera and NPN transistor.",
+			"images":["images/project_LEGO1.jpg", "images/project_LEGO2.jpg"]
+		},
+		{
 			"title":"Optical Coherence Tomograph(OCT) research",
 			"dates":"2009-2010",
 			"description":"improved execution speed of OCT so that 2D images can be processed faster for making 3D image",
@@ -157,12 +166,14 @@ projects.display = function() {
 		var formattedDescription = HTMLprojectDescription.replace("%data%", projects.projects[project].description);
 		$(".project-entry:last").append(formattedDescription);
 
+		/*
 		if (projects.projects[project].images.length > 0) {
 			for (image in projects.projects[project].images){
 				var formattedImage = HTMLprojectImage.replace("%data%", projects.projects[project].images[image]);
 				$(".project-entry:last").append(formattedImage);
 			}
 		}
+		*/
 	}
 };
 
@@ -240,6 +251,7 @@ education.display = function(){
 
 //calling functions for page layout starts here.
 bio.display();
+skills.display();
 work.display();
 projects.display();
 education.display();
