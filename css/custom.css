@@ -14,7 +14,7 @@
 
 div.inputDiv  {
 	float: left;
-	width: 42%;
+	width: 80%;
 	min-height: 100%;
 	/*border: Navy 1px dotted;*/
 	margin: 0 0 0 50px;
@@ -27,8 +27,18 @@ div.inputDiv  {
 #pbar3-label,
 #pbar4-label{
 	font-size: 20px;
-	color: blue;
 }
+
+#langBar0-label,
+#langBar1-label{
+	font-size: 18px;
+}
+
+#langBar0,
+#langBar1{
+	margin: auto auto 10px auto;
+}
+
 
 .title{
 	font-size: 17px;

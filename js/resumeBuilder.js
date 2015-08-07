@@ -40,7 +40,7 @@ bio.display = function(){
 };
 
 var skills = {
-	"skills":
+	"techSkills":
 	[
 		{
 			"name": "HTML",
@@ -62,23 +62,50 @@ var skills = {
 			"name": "Bluetooth",
 			"ability": 80,
 		}
+	],
+	"langSkills":
+	[
+		{
+			"language": "Korean - navtive tongue",
+			"ability": 100
+		},
+		{
+			"language": "English - full proficiency",
+			"ability": 90
+		}
 	]
 }
 
 skills.display = function(){
 
-	for (skill in skills.skills){
+	for (skill in skills.techSkills){
 		var pbar = 'pbar' + skill;
-		var pbarLabel = 'pbar' + skill.toString() + '-label'
+		var pbarLabel = 'pbar' + skill.toString() + '-label';
 
 		$("#"+pbar).progressbar({
-			value: skills.skills[skill].ability,
+			value: skills.techSkills[skill].ability,
 			create: function(){
-				$("#"+pbarLabel).text(skills.skills[skill].name);
+				$("#"+pbarLabel).text(skills.techSkills[skill].name);
 				$("#"+pbar + "> div").css({ 'background': 'rgb(88, 185, 250)' });
 			}
 		});
 	}
+
+	for (skill in skills.langSkills){
+		var langBar = 'langBar' + skill;
+		var langBarLabel = 'langBar' + skill.toString() + '-label';
+
+		$("#"+langBar).progressbar({
+			value: skills.langSkills[skill].ability,
+			create: function(){
+				$("#"+langBarLabel).text(skills.langSkills[skill].language);
+				$("#"+langBar + "> div").css({ 'background': '#04B404' });
+			}
+		});
+
+	}
+
+
 };
 
 var work = {
