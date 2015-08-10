@@ -28,8 +28,13 @@ bio.display = function(){
 
 	var formattedMobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
 	var formattedEmail = HTMLemail.replace("%data%", bio.contacts.email);
-	var formattedGithub = HTMLgithub.replace("%data%", bio.contacts.github);
-	var formattedTwitter = HTMLtwitter.replace("%data%", bio.contacts.twitter);
+	var formattedGithub = HTMLgithub.replace("%data%", bio.contacts.github)
+									.replace("#", "https://github.com/vascode");
+
+
+	
+	var formattedTwitter = HTMLtwitter.replace("%data%", bio.contacts.twitter)
+									  .replace("#", "https://twitter.com/vascode");
 	var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location);
 
 	$("#topContacts ul").append(formattedMobile);
@@ -102,10 +107,7 @@ skills.display = function(){
 				$("#"+langBar + "> div").css({ 'background': '#04B404' });
 			}
 		});
-
 	}
-
-
 };
 
 var work = {
@@ -115,21 +117,21 @@ var work = {
 			"employer":"Laird Technologies",
 			"title":"Field Application Engineer",
 			"location":"Akron, OH",
-			"dates":"2010-2015(current)",
+			"dates":"2010 - 2015(current)",
 			"description":"troubleshoot WiFi and Bluetooth connectivity issues. 	worked with customers to integrate wifi + bluetooth radios, and trouble issues"
 		},
 		{
 			"employer":"BioInVison",
 			"title":"Research Assistant",
 			"location":"Cleveland, OH",
-			"dates":"2009-2010",
+			"dates":"2009 - 2010",
 			"description":"operated Cryo-Imaging machine to capture sliced mice image in 3D"
 		},
 		{
 			"employer":"Korean Military",
 			"title":"Sergent",
 			"location":"Yeoncheon, Korea",
-			"dates":"2003-2005",
+			"dates":"2003 - 2005",
 			"description":"worked in transportation department to transport vehicle components and organized them in stock"
 		}
 	]
@@ -163,27 +165,61 @@ var projects = {
 			"title":"Garage Door Opener",
 			"dates":"2015",
 			"description":"Built upon Rasberry Pi to monitor and control garage door by using Pi camera and NPN transistor.",
-			"images":["images/project_LEGO1.jpg", "images/project_LEGO2.jpg"]
+			"images":["images/project_LEGO1.jpg", "images/project_LEGO2.jpg"],
+			"progress": 80
 		},
 		{
 			"title":"Optical Coherence Tomograph(OCT) research",
-			"dates":"2009-2010",
+			"dates":"2010",
 			"description":"improved execution speed of OCT so that 2D images can be processed faster for making 3D image",
-			"images":["images/project_OCT1.jpg", "images/project_OCT2.jpg"]
+			"images":["images/project_OCT1.jpg", "images/project_OCT2.jpg"],
+			"progress": 100
 		},
 		{
 			"title":"LEGO MINDSTORMS NTX project",
 			"dates":"2008",
 			"description":"Built a robot that detected an object, picked it up and brought it to a marked position. ",
-			"images":["images/project_LEGO1.jpg", "images/project_LEGO2.jpg"]
+			"images":["images/project_LEGO1.jpg", "images/project_LEGO2.jpg"],
+			"progress": 100
 		}
 	]
 };
 
 projects.display = function() {
+	
 	for (project in projects.projects){
-		$("#projects").append(HTMLprojectStart);
+		
+		var div = 'div' + project;		
+		$("#projects").append(HTMLprojectStart);		
+		$(".project-entry:last").append('<div id="' + div + '" class="text-center side-padding"></div>');
 
+
+		var divN = d3.select(document.getElementById(div)); 
+        var rp = radialProgress(document.getElementById(div))         		
+                .diameter(150)
+                .value(projects.projects[project].progress)
+                .render();
+
+		var formattedTitle = HTMLprojectTitle.replace("%data%", projects.projects[project].title);
+		$("#" + div).append(formattedTitle);
+
+		var formattedDate = HTMLprojectDates.replace("%data%", projects.projects[project].dates);
+		$("#" + div).append(formattedDate);
+
+		var formattedDescription = HTMLprojectDescription.replace("%data%", projects.projects[project].description);
+		$("#" + div).append(formattedDescription);
+
+    
+
+
+
+		//$("#projects").append(HTMLprojectStart);
+
+		//var div = 'div' + project;
+		//$(".project-entry:last").append('<div id=' + div + '></div>');
+		//$("#"+div).append('hi');
+
+/*
 		var formattedTitle = HTMLprojectTitle.replace("%data%", projects.projects[project].title);
 		$(".project-entry:last").append(formattedTitle);
 
@@ -192,7 +228,7 @@ projects.display = function() {
 
 		var formattedDescription = HTMLprojectDescription.replace("%data%", projects.projects[project].description);
 		$(".project-entry:last").append(formattedDescription);
-
+*/
 		/*
 		if (projects.projects[project].images.length > 0) {
 			for (image in projects.projects[project].images){
@@ -210,7 +246,7 @@ var education = {
 			"name":"Case Western Reserve University",
 			"degree":"Bachelor of Science",
 			"major":"Biomedical Engineering",
-			"dates":"2007-2010",
+			"dates":"2007 - 2010",
 			"location":"Cleveland, OH"
 		}
 	],
@@ -224,7 +260,7 @@ var education = {
 		"title":"Introduction to Computer Science and Programming Using Python",
 		"school":"edX",
 		"dates":"2014",
-		"url": "https://courses.edx.org/courses/MITx/6.00.1_4x/3T2014/info"
+		"url": "https://courses.edx.org/courses/MITx/6.00.1_4x/3T2014/"
 	}]
 
 };
@@ -280,8 +316,12 @@ education.display = function(){
 bio.display();
 skills.display();
 work.display();
-projects.display();
+//projects.display();
 education.display();
+
+$(document).ready(function(){
+	projects.display();
+});
 
 //$("#main").append(internationalizeButton);
 
