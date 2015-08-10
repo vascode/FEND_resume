@@ -18,8 +18,8 @@ var HTMLheaderRole = '<span id="role" class="_row">%data%</span><hr/ class="_row
 var HTMLcontactGeneric = '<li><span class="orange-text">%contact%</span><span class="lightGrey-text">%data%</span></li>';
 var HTMLmobile = '<li class="contact-item"><i class="fa fa-phone"></i></i><span class="lightGrey-text">%data%</span></li>';
 var HTMLemail = '<li class="contact-item"><i class="fa fa-envelope"></i><span class="lightGrey-text">%data%</span></li>';
-var HTMLtwitter = '<li class="contact-item"><i class="fa fa-twitter"></i><span class="lightGrey-text">%data%</span></li>';
-var HTMLgithub = '<li class="contact-item"><i class="fa fa-github-alt"></i><span class="lightGrey-text">%data%</span></li>';
+var HTMLtwitter = '<li class="contact-item"><a href="https://twitter.com/vascode"><i class="fa fa-twitter"></i><span class="lightGrey-text">%data%</span></a></li>';
+var HTMLgithub = '<li class="contact-item"><a href="https://github.com/vascode"><i class="fa fa-github-alt"></i><span class="lightGrey-text">%data%</span></a></li>';
 var HTMLblog = '<li class="contact-item"><span class="lightGrey-text">%data%</span></li>';
 var HTMLlocation = '<li class="contact-item"><i class="fa fa-map-marker"></i><span class="lightGrey-text">%data%</span></li>';
 
