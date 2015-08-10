@@ -32,8 +32,8 @@ bio.display = function(){
 									.replace("#", "https://github.com/vascode");
 
 
-	
-	var formattedTwitter = HTMLtwitter.replace("%data%", bio.contacts.twitter)	
+
+	var formattedTwitter = HTMLtwitter.replace("%data%", bio.contacts.twitter)
 									  .replace("#", "https://twitter.com/vascode");
 	var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location);
 
@@ -86,6 +86,12 @@ skills.display = function(){
 	for (skill in skills.techSkills){
 		var pbar = 'pbar' + skill;
 		var pbarLabel = 'pbar' + skill.toString() + '-label';
+
+		var formattetdSkillOutter = HTMLskillOutter.replace("#id", pbar);
+		var formattedSkillInner = HTMLskillInner.replace("#id", pbarLabel);
+
+		$("#techSkills").append(formattetdSkillOutter);
+		$("#"+ pbar).append(formattedSkillInner);
 
 		$("#"+pbar).progressbar({
 			value: skills.techSkills[skill].ability,
@@ -192,16 +198,16 @@ var projects = {
 };
 
 projects.display = function() {
-	
+
 	for (project in projects.projects){
-		
-		var div = 'div' + project;		
-		$("#projects").append(HTMLprojectStart);		
+
+		var div = 'div' + project;
+		$("#projects").append(HTMLprojectStart);
 		$(".project-entry:last").append('<div id="' + div + '" class="text-center side-padding"></div>');
 
 
-		var divN = d3.select(document.getElementById(div)); 
-        var rp = radialProgress(document.getElementById(div))         		
+		var divN = d3.select(document.getElementById(div));
+        var rp = radialProgress(document.getElementById(div))
                 .diameter(150)
                 .value(projects.projects[project].progress)
                 .render();
@@ -215,7 +221,7 @@ projects.display = function() {
 		var formattedDescription = HTMLprojectDescription.replace("%data%", projects.projects[project].description);
 		$("#" + div).append(formattedDescription);
 
-    
+
 
 
 
@@ -290,7 +296,7 @@ education.display = function(){
 		//$(".education-entry:last").append(formattedDate);
 		var formattedLocation = HTMLschoolLocation.replace("%data%", education.schools[school].location);
 		//$(".education-entry:last").append(formattedLocation);
-		var formattedDateLocation = formattedDate + formattedLocation; 
+		var formattedDateLocation = formattedDate + formattedLocation;
 		$(".education-entry:last").append(formattedDateLocation);
 
 

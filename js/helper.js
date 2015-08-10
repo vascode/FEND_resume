@@ -26,6 +26,9 @@ var HTMLlocation = '<li class="contact-item"><i class="fa fa-map-marker"></i><sp
 var HTMLbioPic = '<img src="%data%" class="biopic">';
 var HTMLwelcomeMsg = '<span class="welcome-message">%data%</span>';
 
+var HTMLskillOutter = '<div id="#id" style="position:relative;"></div>';
+var HTMLskillInner = '<span id="#id" style="position:absolute; left:2%; top:0%"></span>';
+
 var HTMLworkStart = '<div class="work-entry"></div>';
 var HTMLworkEmployer = '<div class="title"><a href="#">%data%';
 var HTMLworkTitle = ' - %data%</a></div>';
