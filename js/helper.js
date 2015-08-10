@@ -39,7 +39,7 @@ var HTMLworkDescription = '<p>%data%</p><br>';
 var HTMLprojectStart = '<div class="project-entry col-4"></div>';
 var HTMLprojectTitle = '<div class="title"><a href="#">%data%</a></div>';
 var HTMLprojectDates = '<div class="date-text">%data%</div>';
-var HTMLprojectDescription = '<div class="bottom-margin"><p>%data%</p></div>';
+var HTMLprojectDescription = '<div class="bottom-margin side-padding"><p>%data%</p></div>';
 var HTMLprojectImage = '<img src="%data%">';
 
 var HTMLschoolStart = '<div class="education-entry"></div>';
