@@ -18,40 +18,43 @@ var HTMLheaderRole = '<span id="role" class="_row">%data%</span><hr/ class="_row
 var HTMLcontactGeneric = '<li><span class="orange-text">%contact%</span><span class="lightGrey-text">%data%</span></li>';
 var HTMLmobile = '<li class="contact-item"><i class="fa fa-phone"></i></i><span class="lightGrey-text">%data%</span></li>';
 var HTMLemail = '<li class="contact-item"><i class="fa fa-envelope"></i><span class="lightGrey-text">%data%</span></li>';
-var HTMLtwitter = '<li class="contact-item"><a href="#"><i class="fa fa-twitter"></i><span class="lightGrey-text">%data%</a></span></li>';
-var HTMLgithub = '<li class="contact-item"><a href="#"><i class="fa fa-github-alt"></i><span class="lightGrey-text">%data%</a></span></li>';
+var HTMLtwitter = '<li class="contact-item"><i class="fa fa-twitter"></i><span class="lightGrey-text">%data%</span></li>';
+var HTMLgithub = '<li class="contact-item"><i class="fa fa-github-alt"></i><span class="lightGrey-text">%data%</span></li>';
 var HTMLblog = '<li class="contact-item"><span class="lightGrey-text">%data%</span></li>';
 var HTMLlocation = '<li class="contact-item"><i class="fa fa-map-marker"></i><span class="lightGrey-text">%data%</span></li>';
 
 var HTMLbioPic = '<img src="%data%" class="biopic">';
 var HTMLwelcomeMsg = '<span class="welcome-message">%data%</span>';
 
+var HTMLskillOutter = '<div id="#id" style="position:relative;"></div>'
+var HTMLskillInner = '<span id="#id" style="position:absolute; left:2%; top:0%"></span>'
+
 var HTMLworkStart = '<div class="work-entry"></div>';
 var HTMLworkEmployer = '<div class="title"><a href="#">%data%';
 var HTMLworkTitle = ' - %data%</a></div>';
-var HTMLworkDates = '<div class="date-text">%data%';
-var HTMLworkLocation = '<span class="location-text">%data%</span></div>';
-var HTMLworkDescription = '<p>%data%</p><br>';
+var HTMLworkDates = '<div class="date-text">%data%</div>';
+var HTMLworkLocation = '<div class="location-text">%data%</div>';
+var HTMLworkDescription = '<p><br>%data%</p><br>';
 
-var HTMLprojectStart = '<div class="project-entry col-4"></div>';
+var HTMLprojectStart = '<div class="project-entry col-4 text-center"></div>';
 var HTMLprojectTitle = '<div class="title"><a href="#">%data%</a></div>';
 var HTMLprojectDates = '<div class="date-text">%data%</div>';
-var HTMLprojectDescription = '<div class="bottom-margin"><p>%data%</p></div>';
+var HTMLprojectDescription = '<p><br>%data%</p><br/>';
 var HTMLprojectImage = '<img src="%data%">';
 
 var HTMLschoolStart = '<div class="education-entry"></div>';
 var HTMLschoolName = '<div class="title"><a href="#">%data%';
 var HTMLschoolDegree = ' -- %data%</a></div>';
-var HTMLschoolDates = '<div class="date-text">%data%';
-var HTMLschoolLocation = '<span class="location-text">%data%</span></div>';
-var HTMLschoolMajor = '<em> Major: %data%</em>';
+var HTMLschoolDates = '<div class="date-text">%data%</div>';
+var HTMLschoolLocation = '<div class="location-text">%data%</div>';
+var HTMLschoolMajor = '<em><br>Major: %data%</em>';
 
 var HTMLonlineClasses = '<br><h3>Online Classes</h3>';
 //var HTMLonlineTitle = '<a href="#">%data%';
 var HTMLonlineTitle = '<div class="title">%data%';
 var HTMLonlineSchool = ' @ %data%</div>';
 var HTMLonlineDates = '<div class="date-text">%data%</div>';
-var HTMLonlineURL = '<a href="#">%data%</a><br/>';
+var HTMLonlineURL = '<br><a href="#">%data%</a><br/>';
 
 var internationalizeButton = '<button>Internationalize</button>';
 var googleMap = '<div id="map"></div>';
@@ -115,7 +118,7 @@ function initializeMap() {
   };
 
 
-  map = new google.maps.Map(document.querySelector('#map'), mapOptions);
+  map = new google.maps.Map(document.querySelector('#map-div'), mapOptions);
 
 
   /*

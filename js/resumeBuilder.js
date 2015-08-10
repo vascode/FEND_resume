@@ -28,13 +28,8 @@ bio.display = function(){
 
 	var formattedMobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
 	var formattedEmail = HTMLemail.replace("%data%", bio.contacts.email);
-	var formattedGithub = HTMLgithub.replace("%data%", bio.contacts.github)
-									.replace("#", "https://github.com/vascode");
-
-
-	
-	var formattedTwitter = HTMLtwitter.replace("%data%", bio.contacts.twitter)	
-									  .replace("#", "https://twitter.com/vascode");
+	var formattedGithub = HTMLgithub.replace("%data%", bio.contacts.github);
+	var formattedTwitter = HTMLtwitter.replace("%data%", bio.contacts.twitter);
 	var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location);
 
 	$("#topContacts ul").append(formattedMobile);
@@ -87,6 +82,12 @@ skills.display = function(){
 		var pbar = 'pbar' + skill;
 		var pbarLabel = 'pbar' + skill.toString() + '-label';
 
+		var formattetdSkillOutter = HTMLskillOutter.replace("#id", pbar);
+		var formattedSkillInner = HTMLskillInner.replace("#id", pbarLabel);
+
+		$("#techSkills").append(formattetdSkillOutter);
+		$("#"+ pbar).append(formattedSkillInner);
+
 		$("#"+pbar).progressbar({
 			value: skills.techSkills[skill].ability,
 			create: function(){
@@ -117,25 +118,22 @@ var work = {
 			"employer":"Laird Technologies",
 			"title":"Field Application Engineer",
 			"location":"Akron, OH",
-			"dates":"2010 - 2015(current)",
-			"description":"troubleshoot WiFi and Bluetooth connectivity issues. 	worked with customers to integrate wifi + bluetooth radios, and trouble issues",
-			"URL": "http://lairdtech.com/"
+			"dates":"2010-2015(current)",
+			"description":"troubleshoot WiFi and Bluetooth connectivity issues. 	worked with customers to integrate wifi + bluetooth radios, and trouble issues"
 		},
 		{
 			"employer":"BioInVison",
 			"title":"Research Assistant",
 			"location":"Cleveland, OH",
-			"dates":"2009 - 2010",
-			"description":"operated Cryo-Imaging machine to capture sliced mice image in 3D",
-			"URL": "http://www.bioinvision.com/"
+			"dates":"2009-2010",
+			"description":"operated Cryo-Imaging machine to capture sliced mice image in 3D"
 		},
 		{
 			"employer":"Korean Military",
 			"title":"Sergent",
 			"location":"Yeoncheon, Korea",
-			"dates":"2003 - 2005",
-			"description":"worked in transportation department to transport vehicle components and organized them in stock",
-			"URL": "http://www.mnd.go.kr/mbshome/mbs/mnd_eng/"
+			"dates":"2003-2005",
+			"description":"worked in transportation department to transport vehicle components and organized them in stock"
 		}
 	]
 };
@@ -145,9 +143,7 @@ work.display = function() {
 	for (job in work.jobs) {
 		$("#workExperience").append(HTMLworkStart);
 
-		var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer)
-												.replace("#", work.jobs[job].URL)
-
+		var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
 		var formattedTitle = HTMLworkTitle.replace("%data%", work.jobs[job].title);
 		var formattedEmployerTitle = formattedEmployer + formattedTitle;
 
@@ -155,7 +151,6 @@ work.display = function() {
 
 		var formattedDate = HTMLworkDates.replace("%data%", work.jobs[job].dates);
 		var formattedLocation = HTMLworkLocation.replace("%data%", work.jobs[job].location);
-
 		var formattedDateLocation = formattedDate + formattedLocation;
 		$(".work-entry:last").append(formattedDateLocation);
 
@@ -176,7 +171,7 @@ var projects = {
 		},
 		{
 			"title":"Optical Coherence Tomograph(OCT) research",
-			"dates":"2010",
+			"dates":"2009-2010",
 			"description":"improved execution speed of OCT so that 2D images can be processed faster for making 3D image",
 			"images":["images/project_OCT1.jpg", "images/project_OCT2.jpg"],
 			"progress": 100
@@ -192,40 +187,18 @@ var projects = {
 };
 
 projects.display = function() {
-	
 	for (project in projects.projects){
-		
-		var div = 'div' + project;		
-		$("#projects").append(HTMLprojectStart);		
-		$(".project-entry:last").append('<div id="' + div + '" class="text-center side-padding"></div>');
+		$("#projects").append(HTMLprojectStart);
 
+		var div = 'div' + project;
+		$(".project-entry:last").append('<div id=' + div + '></div>')
 
-		var divN = d3.select(document.getElementById(div)); 
-        var rp = radialProgress(document.getElementById(div))         		
-                .diameter(150)
-                .value(projects.projects[project].progress)
-                .render();
+		var progressDiv = d3.select(document.getElementById(div));
+		var radialPro = radialProgress(document.getElementById(div))
+						.diameter(150)
+						.value(projects.projects[project].progress)
+						.render();
 
-		var formattedTitle = HTMLprojectTitle.replace("%data%", projects.projects[project].title);
-		$("#" + div).append(formattedTitle);
-
-		var formattedDate = HTMLprojectDates.replace("%data%", projects.projects[project].dates);
-		$("#" + div).append(formattedDate);
-
-		var formattedDescription = HTMLprojectDescription.replace("%data%", projects.projects[project].description);
-		$("#" + div).append(formattedDescription);
-
-    
-
-
-
-		//$("#projects").append(HTMLprojectStart);
-
-		//var div = 'div' + project;
-		//$(".project-entry:last").append('<div id=' + div + '></div>');
-		//$("#"+div).append('hi');
-
-/*
 		var formattedTitle = HTMLprojectTitle.replace("%data%", projects.projects[project].title);
 		$(".project-entry:last").append(formattedTitle);
 
@@ -234,7 +207,7 @@ projects.display = function() {
 
 		var formattedDescription = HTMLprojectDescription.replace("%data%", projects.projects[project].description);
 		$(".project-entry:last").append(formattedDescription);
-*/
+
 		/*
 		if (projects.projects[project].images.length > 0) {
 			for (image in projects.projects[project].images){
@@ -250,24 +223,23 @@ var education = {
 	"schools": [
 		{
 			"name":"Case Western Reserve University",
-			"degree":"Bachelor of Science in Engineering",
+			"degree":"Bachelor of Science",
 			"major":"Biomedical Engineering",
-			"dates":"2007 - 2010",
-			"location":"Cleveland, OH",
-			"URL": "http://engineering.case.edu/ebme/"
+			"dates":"2007-2010",
+			"location":"Cleveland, OH"
 		}
 	],
 	"onlineCourses": [{
 		"title":"Front-end Web development",
 		"school":"Udacity",
 		"dates":"2015",
-		"URL": "https://www.udacity.com/nanodegrees"
+		"url": "https://www.udacity.com/nanodegrees"
 	},
 	{
 		"title":"Introduction to Computer Science and Programming Using Python",
 		"school":"edX",
 		"dates":"2014",
-		"URL": "https://courses.edx.org/courses/MITx/6.00.1_4x/3T2014/"
+		"url": "https://courses.edx.org/courses/MITx/6.00.1_4x/3T2014/info"
 	}]
 
 };
@@ -276,8 +248,7 @@ education.display = function(){
 	for (school in education.schools){
 		$("#education").append(HTMLschoolStart);
 
-		var formattedName = HTMLschoolName.replace("%data%", education.schools[school].name)
-											.replace("#", education.schools[school].URL);
+		var formattedName = HTMLschoolName.replace("%data%", education.schools[school].name);
 		//$(".education-entry:last").append(formattedName);
 
 		var formattedDegree = HTMLschoolDegree.replace("%data%", education.schools[school].degree);
@@ -287,12 +258,10 @@ education.display = function(){
 		$(".education-entry:last").append(formattedNameDegree);
 
 		var formattedDate = HTMLschoolDates.replace("%data%", education.schools[school].dates);
-		//$(".education-entry:last").append(formattedDate);
-		var formattedLocation = HTMLschoolLocation.replace("%data%", education.schools[school].location);
-		//$(".education-entry:last").append(formattedLocation);
-		var formattedDateLocation = formattedDate + formattedLocation; 
-		$(".education-entry:last").append(formattedDateLocation);
+		$(".education-entry:last").append(formattedDate);
 
+		var formattedLocation = HTMLschoolLocation.replace("%data%", education.schools[school].location);
+		$(".education-entry:last").append(formattedLocation);
 
 		var formattedMajor = HTMLschoolMajor.replace("%data%", education.schools[school].major);
 		$(".education-entry:last").append(formattedMajor);
@@ -315,8 +284,7 @@ education.display = function(){
 		var formattedDate = HTMLonlineDates.replace("%data%", education.onlineCourses[course].dates);
 		$(".education-entry:last").append(formattedDate);
 
-		var formattedURL = HTMLonlineURL.replace("%data%", education.onlineCourses[course].URL)
-										.replace("#", education.onlineCourses[course].URL);
+		var formattedURL = HTMLonlineURL.replace("%data%", education.onlineCourses[course].url);
 		$(".education-entry:last").append(formattedURL);
 
 	}
@@ -327,12 +295,8 @@ education.display = function(){
 bio.display();
 skills.display();
 work.display();
-//projects.display();
+projects.display();
 education.display();
-
-$(document).ready(function(){
-	projects.display();
-});
 
 //$("#main").append(internationalizeButton);
 
