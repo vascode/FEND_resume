@@ -33,7 +33,7 @@ bio.display = function(){
 
 
 	
-	var formattedTwitter = HTMLtwitter.replace("%data%", bio.contacts.twitter)
+	var formattedTwitter = HTMLtwitter.replace("%data%", bio.contacts.twitter)	
 									  .replace("#", "https://twitter.com/vascode");
 	var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location);
 
@@ -118,21 +118,24 @@ var work = {
 			"title":"Field Application Engineer",
 			"location":"Akron, OH",
 			"dates":"2010 - 2015(current)",
-			"description":"troubleshoot WiFi and Bluetooth connectivity issues. 	worked with customers to integrate wifi + bluetooth radios, and trouble issues"
+			"description":"troubleshoot WiFi and Bluetooth connectivity issues. 	worked with customers to integrate wifi + bluetooth radios, and trouble issues",
+			"URL": "http://lairdtech.com/"
 		},
 		{
 			"employer":"BioInVison",
 			"title":"Research Assistant",
 			"location":"Cleveland, OH",
 			"dates":"2009 - 2010",
-			"description":"operated Cryo-Imaging machine to capture sliced mice image in 3D"
+			"description":"operated Cryo-Imaging machine to capture sliced mice image in 3D",
+			"URL": "http://www.bioinvision.com/"
 		},
 		{
 			"employer":"Korean Military",
 			"title":"Sergent",
 			"location":"Yeoncheon, Korea",
 			"dates":"2003 - 2005",
-			"description":"worked in transportation department to transport vehicle components and organized them in stock"
+			"description":"worked in transportation department to transport vehicle components and organized them in stock",
+			"URL": "http://www.mnd.go.kr/mbshome/mbs/mnd_eng/"
 		}
 	]
 };
@@ -142,7 +145,9 @@ work.display = function() {
 	for (job in work.jobs) {
 		$("#workExperience").append(HTMLworkStart);
 
-		var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
+		var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer)
+												.replace("#", work.jobs[job].URL)
+
 		var formattedTitle = HTMLworkTitle.replace("%data%", work.jobs[job].title);
 		var formattedEmployerTitle = formattedEmployer + formattedTitle;
 
@@ -244,23 +249,24 @@ var education = {
 	"schools": [
 		{
 			"name":"Case Western Reserve University",
-			"degree":"Bachelor of Science",
+			"degree":"Bachelor of Science in Engineering",
 			"major":"Biomedical Engineering",
 			"dates":"2007 - 2010",
-			"location":"Cleveland, OH"
+			"location":"Cleveland, OH",
+			"URL": "http://engineering.case.edu/ebme/"
 		}
 	],
 	"onlineCourses": [{
 		"title":"Front-end Web development",
 		"school":"Udacity",
 		"dates":"2015",
-		"url": "https://www.udacity.com/nanodegrees"
+		"URL": "https://www.udacity.com/nanodegrees"
 	},
 	{
 		"title":"Introduction to Computer Science and Programming Using Python",
 		"school":"edX",
 		"dates":"2014",
-		"url": "https://courses.edx.org/courses/MITx/6.00.1_4x/3T2014/"
+		"URL": "https://courses.edx.org/courses/MITx/6.00.1_4x/3T2014/"
 	}]
 
 };
@@ -269,7 +275,8 @@ education.display = function(){
 	for (school in education.schools){
 		$("#education").append(HTMLschoolStart);
 
-		var formattedName = HTMLschoolName.replace("%data%", education.schools[school].name);
+		var formattedName = HTMLschoolName.replace("%data%", education.schools[school].name)
+											.replace("#", education.schools[school].URL);
 		//$(".education-entry:last").append(formattedName);
 
 		var formattedDegree = HTMLschoolDegree.replace("%data%", education.schools[school].degree);
@@ -305,7 +312,8 @@ education.display = function(){
 		var formattedDate = HTMLonlineDates.replace("%data%", education.onlineCourses[course].dates);
 		$(".education-entry:last").append(formattedDate);
 
-		var formattedURL = HTMLonlineURL.replace("%data%", education.onlineCourses[course].url);
+		var formattedURL = HTMLonlineURL.replace("%data%", education.onlineCourses[course].URL)
+										.replace("#", education.onlineCourses[course].URL);
 		$(".education-entry:last").append(formattedURL);
 
 	}
