@@ -155,6 +155,7 @@ work.display = function() {
 
 		var formattedDate = HTMLworkDates.replace("%data%", work.jobs[job].dates);
 		var formattedLocation = HTMLworkLocation.replace("%data%", work.jobs[job].location);
+
 		var formattedDateLocation = formattedDate + formattedLocation;
 		$(".work-entry:last").append(formattedDateLocation);
 
@@ -286,10 +287,12 @@ education.display = function(){
 		$(".education-entry:last").append(formattedNameDegree);
 
 		var formattedDate = HTMLschoolDates.replace("%data%", education.schools[school].dates);
-		$(".education-entry:last").append(formattedDate);
-
+		//$(".education-entry:last").append(formattedDate);
 		var formattedLocation = HTMLschoolLocation.replace("%data%", education.schools[school].location);
-		$(".education-entry:last").append(formattedLocation);
+		//$(".education-entry:last").append(formattedLocation);
+		var formattedDateLocation = formattedDate + formattedLocation; 
+		$(".education-entry:last").append(formattedDateLocation);
+
 
 		var formattedMajor = HTMLschoolMajor.replace("%data%", education.schools[school].major);
 		$(".education-entry:last").append(formattedMajor);
