@@ -28,8 +28,14 @@ bio.display = function(){
 
 	var formattedMobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
 	var formattedEmail = HTMLemail.replace("%data%", bio.contacts.email);
-	var formattedGithub = HTMLgithub.replace("%data%", bio.contacts.github);
-	var formattedTwitter = HTMLtwitter.replace("%data%", bio.contacts.twitter);
+	var formattedGithub = HTMLgithub.replace("%data%", bio.contacts.github)
+									.replace("#", "https://github.com/vascode");
+
+
+
+	var formattedTwitter = HTMLtwitter.replace("%data%", bio.contacts.twitter)
+									  .replace("#", "https://twitter.com/vascode");
+
 	var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location);
 
 	$("#topContacts ul").append(formattedMobile);
@@ -188,6 +194,7 @@ var projects = {
 
 projects.display = function() {
 	for (project in projects.projects){
+
 		$("#projects").append(HTMLprojectStart);
 
 		var div = 'div' + project;
@@ -258,7 +265,13 @@ education.display = function(){
 		$(".education-entry:last").append(formattedNameDegree);
 
 		var formattedDate = HTMLschoolDates.replace("%data%", education.schools[school].dates);
+
 		$(".education-entry:last").append(formattedDate);
+		//$(".education-entry:last").append(formattedDate);
+		var formattedLocation = HTMLschoolLocation.replace("%data%", education.schools[school].location);
+		//$(".education-entry:last").append(formattedLocation);
+		var formattedDateLocation = formattedDate + formattedLocation;
+		$(".education-entry:last").append(formattedDateLocation);
 
 		var formattedLocation = HTMLschoolLocation.replace("%data%", education.schools[school].location);
 		$(".education-entry:last").append(formattedLocation);

@@ -26,6 +26,7 @@ var HTMLlocation = '<li class="contact-item"><i class="fa fa-map-marker"></i><sp
 var HTMLbioPic = '<img src="%data%" class="biopic">';
 var HTMLwelcomeMsg = '<span class="welcome-message">%data%</span>';
 
+
 var HTMLskillOutter = '<div id="#id" style="position:relative;"></div>'
 var HTMLskillInner = '<span id="#id" style="position:absolute; left:2%; top:0%"></span>'
 
@@ -39,7 +40,9 @@ var HTMLworkDescription = '<p><br>%data%</p><br>';
 var HTMLprojectStart = '<div class="project-entry col-4 text-center"></div>';
 var HTMLprojectTitle = '<div class="title"><a href="#">%data%</a></div>';
 var HTMLprojectDates = '<div class="date-text">%data%</div>';
-var HTMLprojectDescription = '<p><br>%data%</p><br/>';
+
+var HTMLprojectDescription = '<div class="bottom-margin side-padding"><p>%data%</p></div>';
+
 var HTMLprojectImage = '<img src="%data%">';
 
 var HTMLschoolStart = '<div class="education-entry"></div>';
