@@ -137,7 +137,7 @@ var work = {
 			"employer":"Laird Technologies",
 			"title":"Field Application Engineer",
 			"location":"Akron, OH",
-			"dates":"2010 - 2015(current)",
+			"dates":"2010 - 2015",
 			"description":"troubleshoot WiFi and Bluetooth connectivity issues. 	worked with customers to integrate wifi + bluetooth radios, and trouble issues",
 			"URL": "http://lairdtech.com/"
 		},
@@ -174,10 +174,13 @@ work.display = function() {
 		$(".work-entry:last").append(formattedEmployerTitle);
 
 		var formattedDate = HTMLworkDates.replace("%data%", work.jobs[job].dates);
-		var formattedLocation = HTMLworkLocation.replace("%data%", work.jobs[job].location);
+		$(".work-entry:last").append(formattedDate);
 
-		var formattedDateLocation = formattedDate + formattedLocation;
-		$(".work-entry:last").append(formattedDateLocation);
+		var formattedLocation = HTMLworkLocation.replace("%data%", work.jobs[job].location);	
+		$(".work-entry:last").append(formattedLocation);
+
+		//var formattedDateLocation = formattedDate + formattedLocation;
+		//$(".work-entry:last").append(formattedDateLocation);
 
 		var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description);
 		$(".work-entry:last").append(formattedDescription);
@@ -307,11 +310,12 @@ education.display = function(){
 		$(".education-entry:last").append(formattedNameDegree);
 
 		var formattedDate = HTMLschoolDates.replace("%data%", education.schools[school].dates);
-		//$(".education-entry:last").append(formattedDate);
+		$(".education-entry:last").append(formattedDate);
 		var formattedLocation = HTMLschoolLocation.replace("%data%", education.schools[school].location);
-		//$(".education-entry:last").append(formattedLocation);
-		var formattedDateLocation = formattedDate + formattedLocation;
-		$(".education-entry:last").append(formattedDateLocation);
+		$(".education-entry:last").append(formattedLocation);
+		
+		//var formattedDateLocation = formattedDate + formattedLocation;
+		//$(".education-entry:last").append(formattedDateLocation);
 
 
 		var formattedMajor = HTMLschoolMajor.replace("%data%", education.schools[school].major);
