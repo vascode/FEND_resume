@@ -15,13 +15,20 @@ replace the %data% placeholder text you see in them.
 var HTMLheaderName = '<h1 id="name" class="_row">%data%</h1>';
 var HTMLheaderRole = '<span id="role" class="_row">%data%</span><hr/ class="_row">';
 
-var HTMLcontactGeneric = '<li><span class="orange-text">%contact%</span><span class="lightGrey-text">%data%</span></li>';
+var HTMLcontactGeneric = '<li><span>%contact%</span><span class="lightGrey-text">%data%</span></li>';
 var HTMLmobile = '<li class="contact-item"><i class="fa fa-phone"></i></i><span class="lightGrey-text">%data%</span></li>';
 var HTMLemail = '<li class="contact-item"><i class="fa fa-envelope"></i><span class="lightGrey-text">%data%</span></li>';
 var HTMLtwitter = '<li class="contact-item"><a href="#"><i class="fa fa-twitter"></i><span class="lightGrey-text">%data%</a></span></li>';
 var HTMLgithub = '<li class="contact-item"><a href="#"><i class="fa fa-github-alt"></i><span class="lightGrey-text">%data%</a></span></li>';
 var HTMLblog = '<li class="contact-item"><span class="lightGrey-text">%data%</span></li>';
 var HTMLlocation = '<li class="contact-item"><i class="fa fa-map-marker"></i><span class="lightGrey-text">%data%</span></li>';
+
+var HTMLmobile_footer = '<li class="contact-item inblock text-center"><i class="fa fa-phone"></i></i><span class="white-text">%data%</span></li>';
+var HTMLemail_footer = '<li class="contact-item inblock text-center"><i class="fa fa-envelope"></i><span class="white-text">%data%</span></li>';
+var HTMLtwitter_footer = '<li class="contact-item inblock text-center"><a href="#"><i class="fa fa-twitter"></i><span class="white-text">%data%</a></span></li>';
+var HTMLgithub_footer = '<li class="contact-item inblock text-center"><a href="#"><i class="fa fa-github-alt"></i><span class="white-text">%data%</a></span></li>';
+var HTMLblog_footer = '<li class="contact-item inblock text-center"><span class="white-text">%data%</span></li>';
+var HTMLlocation_footer = '<li class="contact-item inblock"><i class="fa fa-map-marker"></i><span class="white-text">%data%</span></li>';
 
 var HTMLbioPic = '<img src="%data%" class="biopic">';
 var HTMLwelcomeMsg = '<span class="welcome-message">%data%</span>';

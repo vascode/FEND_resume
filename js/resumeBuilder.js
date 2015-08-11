@@ -31,8 +31,6 @@ bio.display = function(){
 	var formattedGithub = HTMLgithub.replace("%data%", bio.contacts.github)
 									.replace("#", "https://github.com/vascode");
 
-
-
 	var formattedTwitter = HTMLtwitter.replace("%data%", bio.contacts.twitter)
 									  .replace("#", "https://twitter.com/vascode");
 	var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location);
@@ -42,6 +40,22 @@ bio.display = function(){
 	$("#topContacts ul").append(formattedGithub);
 	$("#topContacts ul").append(formattedTwitter);
 	$("#topContacts ul").append(formattedLocation);
+
+	var formattedMobile_footer = HTMLmobile_footer.replace("%data%", bio.contacts.mobile);
+	var formattedEmail_footer = HTMLemail_footer.replace("%data%", bio.contacts.email);
+	var formattedGithub_footer = HTMLgithub_footer.replace("%data%", bio.contacts.github)
+													.replace("#", "https://github.com/vascode");
+
+	var formattedTwitter_footer = HTMLtwitter_footer.replace("%data%", bio.contacts.twitter)
+													  .replace("#", "https://twitter.com/vascode");
+	var formattedLocation_footer = HTMLlocation_footer.replace("%data%", bio.contacts.location);
+
+	$("#footerContacts ul").append(formattedMobile_footer);
+	$("#footerContacts ul").append(formattedEmail_footer);
+	$("#footerContacts ul").append(formattedGithub_footer);
+	$("#footerContacts ul").append(formattedTwitter_footer);
+	$("#footerContacts ul").append(formattedLocation_footer);
+
 };
 
 var skills = {
@@ -327,6 +341,7 @@ education.display = function(){
 
 	}
 }
+
 
 
 //calling functions for page layout starts here.
