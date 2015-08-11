@@ -7,13 +7,13 @@
 	margin: auto;
 }
 
-.category{
+.category {
 	padding-left: 0;
 	margin-top: 10px;
 }
 
 
-div.inputDiv  {
+.inputDiv  {
 	float: left;
 	width: 80%;
 	min-height: 100%;
@@ -26,21 +26,21 @@ div.inputDiv  {
 #pbar1-label,
 #pbar2-label,
 #pbar3-label,
-#pbar4-label{
+#pbar4-label {
 	font-size: 20px;
 }
 
 #langBar0-label,
-#langBar1-label{
+#langBar1-label {
 	font-size: 18px;
 }
 
 #langBar0,
-#langBar1{
+#langBar1 {
 	margin: auto auto 10px auto;
 }
 
-.title{
+.title {
 	font-size: 17px;
 }
 
@@ -60,7 +60,7 @@ div.inputDiv  {
 	display: inline-block;
 }
 
-.white-text{
+.white-text {
 	color: white;
 }
 
@@ -124,7 +124,7 @@ div.inputDiv  {
     width: 100%;
 }
 
-.aboutMe{
+.aboutMe {
 	padding-right: 50px;
 }
 
@@ -146,7 +146,7 @@ div.inputDiv  {
 	}
 
 	.skills {
-		display: wrap;
+		display: flex;
 		flex-wrap: wrap;
 	}
 }
@@ -155,22 +155,22 @@ div.inputDiv  {
 	.biopic {
 		width: 130px;
 	}
-	.welcome-message{
+	.welcome-message {
 		font-size: 15px;
 	}
 
 }
 
 @media only screen and (max-width: 450px){
-	.col-xs-12{
-		width: 100%;		
+	.col-xs-12 {
+		width: 100%;
 	}
 
 	.biopic  {
 		display: none;
 	}
 
-	.welcome-message{
+	.welcome-message {
 		font-size: 15px;
 	}
 

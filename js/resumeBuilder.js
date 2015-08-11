@@ -1,3 +1,5 @@
+'use strict';
+
 var bio = {
 	"name": "Seokwoo Yoon",
 	"role": "Web developer",
@@ -97,7 +99,7 @@ var skills = {
 
 skills.display = function(){
 
-	for (skill in skills.techSkills){
+	for (var skill in skills.techSkills){
 		var pbar = 'pbar' + skill;
 		var pbarLabel = 'pbar' + skill.toString() + '-label';
 
@@ -162,7 +164,7 @@ var work = {
 
 
 work.display = function() {
-	for (job in work.jobs) {
+	for (var job in work.jobs) {
 		$("#workExperience").append(HTMLworkStart);
 
 		var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer)
@@ -176,7 +178,7 @@ work.display = function() {
 		var formattedDate = HTMLworkDates.replace("%data%", work.jobs[job].dates);
 		$(".work-entry:last").append(formattedDate);
 
-		var formattedLocation = HTMLworkLocation.replace("%data%", work.jobs[job].location);	
+		var formattedLocation = HTMLworkLocation.replace("%data%", work.jobs[job].location);
 		$(".work-entry:last").append(formattedLocation);
 
 		//var formattedDateLocation = formattedDate + formattedLocation;
@@ -216,7 +218,7 @@ var projects = {
 
 projects.display = function() {
 
-	for (project in projects.projects){
+	for (var project in projects.projects){
 
 		var div = 'div' + project;
 		$("#projects").append(HTMLprojectStart);
@@ -296,7 +298,7 @@ var education = {
 };
 
 education.display = function(){
-	for (school in education.schools){
+	for (var school in education.schools){
 		$("#education").append(HTMLschoolStart);
 
 		var formattedName = HTMLschoolName.replace("%data%", education.schools[school].name)
@@ -313,7 +315,7 @@ education.display = function(){
 		$(".education-entry:last").append(formattedDate);
 		var formattedLocation = HTMLschoolLocation.replace("%data%", education.schools[school].location);
 		$(".education-entry:last").append(formattedLocation);
-		
+
 		//var formattedDateLocation = formattedDate + formattedLocation;
 		//$(".education-entry:last").append(formattedDateLocation);
 

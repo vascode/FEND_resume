@@ -1,2 +1,5 @@
 for improvement: 
 - add bullets for work and projects. 
+
+how tesverri get used to test with woverline
+SDK fkor passing data from BLE to wifi 
