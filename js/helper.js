@@ -15,7 +15,7 @@ replace the %data% placeholder text you see in them.
 var HTMLheaderName = '<h1 id="name" class="_row">%data%</h1>';
 var HTMLheaderRole = '<span id="role" class="_row">%data%</span><hr/ class="_row">';
 
-var HTMLcontactGeneric = '<li><span class="orange-text">%contact%</span><span class="lightGrey-text">%data%</span></li>';
+var HTMLcontactGeneric = '<li><span>%contact%</span><span class="lightGrey-text">%data%</span></li>';
 var HTMLmobile = '<li class="contact-item"><i class="fa fa-phone"></i></i><span class="lightGrey-text">%data%</span></li>';
 var HTMLemail = '<li class="contact-item"><i class="fa fa-envelope"></i><span class="lightGrey-text">%data%</span></li>';
 var HTMLtwitter = '<li class="contact-item"><a href="#"><i class="fa fa-twitter"></i><span class="lightGrey-text">%data%</a></span></li>';
@@ -23,38 +23,45 @@ var HTMLgithub = '<li class="contact-item"><a href="#"><i class="fa fa-github-al
 var HTMLblog = '<li class="contact-item"><span class="lightGrey-text">%data%</span></li>';
 var HTMLlocation = '<li class="contact-item"><i class="fa fa-map-marker"></i><span class="lightGrey-text">%data%</span></li>';
 
+var HTMLmobile_footer = '<li class="contact-item inblock text-center"><i class="fa fa-phone"></i></i><span class="white-text">%data%</span></li>';
+var HTMLemail_footer = '<li class="contact-item inblock text-center"><i class="fa fa-envelope"></i><span class="white-text">%data%</span></li>';
+var HTMLtwitter_footer = '<li class="contact-item inblock text-center"><a href="#"><i class="fa fa-twitter"></i><span class="white-text">%data%</a></span></li>';
+var HTMLgithub_footer = '<li class="contact-item inblock text-center"><a href="#"><i class="fa fa-github-alt"></i><span class="white-text">%data%</a></span></li>';
+var HTMLblog_footer = '<li class="contact-item inblock text-center"><span class="white-text">%data%</span></li>';
+var HTMLlocation_footer = '<li class="contact-item inblock"><i class="fa fa-map-marker"></i><span class="white-text">%data%</span></li>';
+
 var HTMLbioPic = '<img src="%data%" class="biopic">';
 var HTMLwelcomeMsg = '<span class="welcome-message">%data%</span>';
 
 var HTMLskillOutter = '<div id="#id" style="position:relative;"></div>';
 var HTMLskillInner = '<span id="#id" style="position:absolute; left:2%; top:0%"></span>';
 
-var HTMLworkStart = '<div class="work-entry"></div>';
-var HTMLworkEmployer = '<div class="title"><a href="#">%data%';
+var HTMLworkStart = '<div class="work-entry flex-box"></div>';
+var HTMLworkEmployer = '<div class="title col-12"><a href="#">%data%';
 var HTMLworkTitle = ' - %data%</a></div>';
-var HTMLworkDates = '<div class="date-text">%data%';
-var HTMLworkLocation = '<span class="location-text">%data%</span></div>';
+var HTMLworkDates = '<div class="date-text col-6">%data%</div>';
+var HTMLworkLocation = '<div class="location-text col-6">%data%</div>';
 var HTMLworkDescription = '<p>%data%</p><br>';
 
-var HTMLprojectStart = '<div class="project-entry col-4"></div>';
+var HTMLprojectStart = '<div class="project-entry col-4 col-sm-12"></div>';
 var HTMLprojectTitle = '<div class="title"><a href="#">%data%</a></div>';
 var HTMLprojectDates = '<div class="date-text">%data%</div>';
 var HTMLprojectDescription = '<div class="bottom-margin side-padding"><p>%data%</p></div>';
 var HTMLprojectImage = '<img src="%data%">';
 
-var HTMLschoolStart = '<div class="education-entry"></div>';
-var HTMLschoolName = '<div class="title"><a href="#">%data%';
-var HTMLschoolDegree = ' -- %data%</a></div>';
-var HTMLschoolDates = '<div class="date-text">%data%';
-var HTMLschoolLocation = '<span class="location-text">%data%</span></div>';
+var HTMLschoolStart = '<div class="education-entry flex-box"></div>';
+var HTMLschoolName = '<div class="title col-12"><a href="#">%data%';
+var HTMLschoolDegree = ' - %data%</a></div>';
+var HTMLschoolDates = '<div class="date-text col-6">%data%</div>';
+var HTMLschoolLocation = '<div class="location-text col-6">%data%</div>';
 var HTMLschoolMajor = '<em> Major: %data%</em>';
 
 var HTMLonlineClasses = '<br><h3>Online Classes</h3>';
 //var HTMLonlineTitle = '<a href="#">%data%';
-var HTMLonlineTitle = '<div class="title">%data%';
+var HTMLonlineTitle = '<div class="title col-12">%data%';
 var HTMLonlineSchool = ' @ %data%</div>';
-var HTMLonlineDates = '<div class="date-text">%data%</div>';
-var HTMLonlineURL = '<a href="#">%data%</a><br/>';
+var HTMLonlineDates = '<div class="date-text col-12">%data%</div>';
+var HTMLonlineURL = '<a href="#" class="url">%data%</a><br>';
 
 var internationalizeButton = '<button>Internationalize</button>';
 var googleMap = '<div id="map"></div>';

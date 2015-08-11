@@ -31,8 +31,6 @@ bio.display = function(){
 	var formattedGithub = HTMLgithub.replace("%data%", bio.contacts.github)
 									.replace("#", "https://github.com/vascode");
 
-
-
 	var formattedTwitter = HTMLtwitter.replace("%data%", bio.contacts.twitter)
 									  .replace("#", "https://twitter.com/vascode");
 	var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location);
@@ -42,6 +40,22 @@ bio.display = function(){
 	$("#topContacts ul").append(formattedGithub);
 	$("#topContacts ul").append(formattedTwitter);
 	$("#topContacts ul").append(formattedLocation);
+
+	var formattedMobile_footer = HTMLmobile_footer.replace("%data%", bio.contacts.mobile);
+	var formattedEmail_footer = HTMLemail_footer.replace("%data%", bio.contacts.email);
+	var formattedGithub_footer = HTMLgithub_footer.replace("%data%", bio.contacts.github)
+													.replace("#", "https://github.com/vascode");
+
+	var formattedTwitter_footer = HTMLtwitter_footer.replace("%data%", bio.contacts.twitter)
+													  .replace("#", "https://twitter.com/vascode");
+	var formattedLocation_footer = HTMLlocation_footer.replace("%data%", bio.contacts.location);
+
+	$("#footerContacts ul").append(formattedMobile_footer);
+	$("#footerContacts ul").append(formattedEmail_footer);
+	$("#footerContacts ul").append(formattedGithub_footer);
+	$("#footerContacts ul").append(formattedTwitter_footer);
+	$("#footerContacts ul").append(formattedLocation_footer);
+
 };
 
 var skills = {
@@ -123,7 +137,7 @@ var work = {
 			"employer":"Laird Technologies",
 			"title":"Field Application Engineer",
 			"location":"Akron, OH",
-			"dates":"2010 - 2015(current)",
+			"dates":"2010 - 2015",
 			"description":"troubleshoot WiFi and Bluetooth connectivity issues. 	worked with customers to integrate wifi + bluetooth radios, and trouble issues",
 			"URL": "http://lairdtech.com/"
 		},
@@ -160,10 +174,13 @@ work.display = function() {
 		$(".work-entry:last").append(formattedEmployerTitle);
 
 		var formattedDate = HTMLworkDates.replace("%data%", work.jobs[job].dates);
-		var formattedLocation = HTMLworkLocation.replace("%data%", work.jobs[job].location);
+		$(".work-entry:last").append(formattedDate);
 
-		var formattedDateLocation = formattedDate + formattedLocation;
-		$(".work-entry:last").append(formattedDateLocation);
+		var formattedLocation = HTMLworkLocation.replace("%data%", work.jobs[job].location);	
+		$(".work-entry:last").append(formattedLocation);
+
+		//var formattedDateLocation = formattedDate + formattedLocation;
+		//$(".work-entry:last").append(formattedDateLocation);
 
 		var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description);
 		$(".work-entry:last").append(formattedDescription);
@@ -293,11 +310,12 @@ education.display = function(){
 		$(".education-entry:last").append(formattedNameDegree);
 
 		var formattedDate = HTMLschoolDates.replace("%data%", education.schools[school].dates);
-		//$(".education-entry:last").append(formattedDate);
+		$(".education-entry:last").append(formattedDate);
 		var formattedLocation = HTMLschoolLocation.replace("%data%", education.schools[school].location);
-		//$(".education-entry:last").append(formattedLocation);
-		var formattedDateLocation = formattedDate + formattedLocation;
-		$(".education-entry:last").append(formattedDateLocation);
+		$(".education-entry:last").append(formattedLocation);
+		
+		//var formattedDateLocation = formattedDate + formattedLocation;
+		//$(".education-entry:last").append(formattedDateLocation);
 
 
 		var formattedMajor = HTMLschoolMajor.replace("%data%", education.schools[school].major);
@@ -327,6 +345,7 @@ education.display = function(){
 
 	}
 }
+
 
 
 //calling functions for page layout starts here.

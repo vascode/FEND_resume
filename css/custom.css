@@ -4,6 +4,7 @@
 
 .contact-item {
 	padding: 5px 0 5px 3px;
+	margin: auto;
 }
 
 .category{
@@ -55,11 +56,23 @@ div.inputDiv  {
 	padding: 0 5%;
 }
 
+.inblock {
+	display: inline-block;
+}
+
+.white-text{
+	color: white;
+}
+
+.url {
+	font-size: 11px;
+}
 ._row {
 	width: 100%;
-	max-width: 1200px;
+	max-width: 1000px;
 	margin: auto;
 	display: flex;
+	flex-wrap: wrap;
 	/*overflow: auto;*/
 }
 
@@ -109,4 +122,56 @@ div.inputDiv  {
 
 .col-12 {
     width: 100%;
+}
+
+.aboutMe{
+	padding-right: 50px;
+}
+
+
+
+@media screen and (max-width: 950px){
+	#topContacts {
+		display: none;
+	}
+
+	.col-sm-4 {
+		width: 33.33%;
+	}
+	.col-sm-8 {
+		width: 66.66%;
+	}
+	.col-sm-12 {
+		width: 100%;
+	}
+
+	.skills {
+		display: wrap;
+		flex-wrap: wrap;
+	}
+}
+
+@media screen and (max-width: 550px){
+	.biopic {
+		width: 130px;
+	}
+	.welcome-message{
+		font-size: 15px;
+	}
+
+}
+
+@media only screen and (max-width: 450px){
+	.col-xs-12{
+		width: 100%;		
+	}
+
+	.biopic  {
+		display: none;
+	}
+
+	.welcome-message{
+		font-size: 15px;
+	}
+
 }
