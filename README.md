@@ -10,5 +10,4 @@
 	<li><a href="https://developers.google.com/maps/documentation/javascript/tutorial">Google Maps API</a></li>
 	<li><a href="http://validator.w3.org/">W3C HTML Validator</a></li>
 	<li><a href="http://jigsaw.w3.org/css-validator/">W3C CSS Validator</a></li>
-	<li><a href="https://github.com/codrops/AnimatedBorderMenus/blob/master/css/icons.css">Codrops Animated Border Menu</a> - Checked icons.css Codrops Animated Border Menu tutorial for reference</li>
 </ul>
