@@ -1,5 +1,3 @@
-'use strict';
-
 var bio = {
 	"name": "Seokwoo Yoon",
 	"role": "Web developer",
