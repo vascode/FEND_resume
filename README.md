@@ -1,5 +1,6 @@
 <h1>Resume</h1>
 <p>My Resume - built with custom grid, jQuery, JSON, D3 and Font Awesome</p>
+<p><a href="http://vascode.github.io/FEND_resume/">Demo</a></p>
 
 <h1>References</h1>
 <ul>		
