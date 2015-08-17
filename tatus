@@ -1,0 +1,460 @@
+[33mcommit 0bf4d532e00fb985ed6036819bb7787efbc8e887[m
+Merge: c69e58f 8c07627
+Author: vascode <vascodepssn@gmail.com>
+Date:   Mon Aug 17 11:32:07 2015 -0400
+
+    Merge branch 'master' of https://github.com/vascode/FEND_resume
+
+[33mcommit c69e58fef581b6f63f177cb0e341398d561abfa3[m
+Author: vascode <vascodepssn@gmail.com>
+Date:   Mon Aug 17 11:31:05 2015 -0400
+
+    Added C++, python in skills. Seperated contents and functions in resumeBuilder.js
+
+[33mcommit 8c076272efb0d25590a777e93bf55952332fc58b[m
+Author: Seokwoo Yoon <vascodepssn@gmail.com>
+Date:   Thu Aug 13 16:56:47 2015 -0400
+
+    add Demo in readme
+
+[33mcommit 9c8b12cc77f3b36bfc84ec28287b11f7e54cc957[m
+Author: vascode <vascodepssn@gmail.com>
+Date:   Thu Aug 13 16:35:41 2015 -0400
+
+    remove use strict in resumeBuilder.js
+
+[33mcommit 77046b6076f818a0f60c15bb92237508912675e9[m
+Author: Seokwoo Yoon <vascodepssn@gmail.com>
+Date:   Thu Aug 13 14:31:37 2015 -0400
+
+    Update README.md
+
+[33mcommit 2971db41ed3b1a71f8258d7efeaa872e1fa72c9b[m
+Author: vascode <vascodepssn@gmail.com>
+Date:   Thu Aug 13 14:30:01 2015 -0400
+
+    update readme
+
+[33mcommit 9e70555a515446007c24127679cc23bf973c0362[m
+Merge: e0d0620 7fac25f
+Author: vascode <vascodepssn@gmail.com>
+Date:   Tue Aug 11 15:58:44 2015 -0400
+
+    Merge branch 'practice2'
+
+[33mcommit 7fac25f8c4d4ddb229159c14c9a8064afb65bd20[m
+Author: vascode <vascodepssn@gmail.com>
+Date:   Tue Aug 11 15:56:44 2015 -0400
+
+    add use strict to resumeBuilder.js
+
+[33mcommit e0d0620dd58edcdde3f66c1a1bfd3aa90db02c93[m
+Merge: e9f23e9 ee80367
+Author: vascode <vascodepssn@gmail.com>
+Date:   Tue Aug 11 01:38:32 2015 -0400
+
+    Merge branch 'practice2'
+
+[33mcommit ee803671dfac0ff5b127659a3f5493a46f30b581[m
+Author: vascode <vascodepssn@gmail.com>
+Date:   Tue Aug 11 01:38:17 2015 -0400
+
+    add media query for mobile view
+
+[33mcommit 94937e98d447aa02b11504ebd619370db7759630[m
+Author: vascode <vascodepssn@gmail.com>
+Date:   Mon Aug 10 23:07:38 2015 -0400
+
+    add media query for header
+
+[33mcommit e9f23e98c819a9745ac9f570337953c58c3a8705[m
+Merge: ef32e76 cb51b65
+Author: vascode <vascodepssn@gmail.com>
+Date:   Mon Aug 10 17:57:21 2015 -0400
+
+    Merge branch 'master' into test
+
+[33mcommit cb51b65895ce1cf574e514aab0eaf649e2abc9c3[m
+Merge: 6cd0390 ef32e76
+Author: vascode <vascodepssn@gmail.com>
+Date:   Mon Aug 10 17:53:19 2015 -0400
+
+    Merge branch 'practice2'
+
+[33mcommit ef32e760a858df6c921ab56f3f1b8f6022782800[m
+Author: vascode <vascodepssn@gmail.com>
+Date:   Mon Aug 10 17:52:48 2015 -0400
+
+    remove let's connect
+
+[33mcommit 6cd039059fd049a2621010f665b5aae2c8a8b67b[m
+Merge: 8291dd8 4987db5
+Author: vascode <vascodepssn@gmail.com>
+Date:   Mon Aug 10 17:40:48 2015 -0400
+
+    resolve conflict for merging practice2
+
+[33mcommit 4987db5163e8f45c7176c22d46c71644a635e16b[m
+Author: vascode <vascodepssn@gmail.com>
+Date:   Mon Aug 10 14:58:16 2015 -0400
+
+    add side padding to description of projects
+
+[33mcommit c1f1ea58eef5e5abcb13e84b47d83720c4f836b6[m
+Author: vascode <vascodepssn@gmail.com>
+Date:   Mon Aug 10 14:56:48 2015 -0400
+
+    add <div> for skills in js
+
+[33mcommit 8291dd82512ed1ff758486b7e68dfc63b88ba8f3[m
+Author: unknown <seokwoo.yoon@AKROLFQC74X1.corp.lairdtech.com>
+Date:   Mon Aug 10 11:45:26 2015 -0400
+
+    fixed map layout problem
+
+[33mcommit f7d030f946d6c0996adac126e2cb5086d05cb651[m
+Author: unknown <seokwoo.yoon@AKROLFQC74X1.corp.lairdtech.com>
+Date:   Mon Aug 10 10:53:06 2015 -0400
+
+    add <div> for skill via helper.js and resumeBuilder.js
+
+[33mcommit 0dc4b3632c2e7b3e369992ba902a1609731c9490[m
+Author: vascode <vascodepssn@gmail.com>
+Date:   Mon Aug 10 01:28:46 2015 -0400
+
+    align location with dates in work and education
+
+[33mcommit 3fae1db368b8521fd7606a8302d80ae27bbbd975[m
+Author: vascode <vascodepssn@gmail.com>
+Date:   Mon Aug 10 00:25:44 2015 -0400
+
+    make title for map bold
+
+[33mcommit b6f723e793d0731485e008cb73a44332548d80c4[m
+Author: vascode <vascodepssn@gmail.com>
+Date:   Sun Aug 9 23:51:52 2015 -0400
+
+    add hyperlink to titles in work & education
+
+[33mcommit d6d991706419a9cf4aa8bce850745bc9e56201f8[m
+Author: vascode <vascodepssn@gmail.com>
+Date:   Sun Aug 9 23:38:11 2015 -0400
+
+    Add D3 radial progress in projects. Add hyperlink to github and twitter in bio
+
+[33mcommit 6edf3215fbe000d429169e13453254e79b48b7cb[m
+Author: vascode <vascodepssn@gmail.com>
+Date:   Fri Aug 7 15:32:37 2015 -0400
+
+    remove test folder
+
+[33mcommit ccad43ca00e48b3a1e24290e2515181fc7c65e83[m
+Author: vascode <vascodepssn@gmail.com>
+Date:   Fri Aug 7 15:24:07 2015 -0400
+
+    add icons for title on each section
+
+[33mcommit 248b0736af3d4925b34d24bae717cfba22bcdffb[m
+Author: vascode <vascodepssn@gmail.com>
+Date:   Fri Aug 7 15:13:12 2015 -0400
+
+    add languages
+
+[33mcommit a79438e427d5471b686ecb5219a2460f3756c87c[m
+Author: vascode <vascodepssn@gmail.com>
+Date:   Fri Aug 7 14:39:01 2015 -0400
+
+    add skills in jQuery progressbar
+
+[33mcommit c77dc97e72d99d6a906446624fd967fa7864ff4c[m
+Author: vascode <vascodepssn@gmail.com>
+Date:   Thu Aug 6 14:21:26 2015 -0400
+
+    add indentatation for skills' contents
+
+[33mcommit b65048ca83b480a394d80b6e3d61c7300baa7444[m
+Author: vascode <vascodepssn@gmail.com>
+Date:   Thu Aug 6 13:30:47 2015 -0400
+
+    add progressbar to skills
+
+[33mcommit a8e136679e4dc7b855c4af96253b4a4be9dc2bd9[m
+Author: vascode <vascodepssn@gmail.com>
+Date:   Wed Aug 5 16:40:18 2015 -0400
+
+    contact with icons @header, indentation look @main
+
+[33mcommit b31cb4f836f7d9781cda5a3b8d61303330ea074e[m
+Author: vascode <vascodepssn@gmail.com>
+Date:   Wed Aug 5 13:57:59 2015 -0400
+
+    re-arrange header using customized row and col(skills out of header)
+
+[33mcommit ff3293bc490341187eaf44a06d4507e68f54960f[m
+Author: vascode <vascodepssn@gmail.com>
+Date:   Wed Aug 5 10:56:54 2015 -0400
+
+    commit before making new branch
+
+[33mcommit c779082c56feabf766197d54975b268604ea29e6[m
+Author: vascode <vascodepssn@gmail.com>
+Date:   Mon Aug 3 10:24:28 2015 -0400
+
+    added formattedTitleSchool in onlineCourses
+
+[33mcommit 6ad95df670f589f819f5236cbfe6fb23f20e0bcf[m
+Author: vascode <vascodepssn@gmail.com>
+Date:   Mon Aug 3 10:05:36 2015 -0400
+
+    start tracking my changes
+
+[33mcommit 64e90d9627a7651f4c60f2c68994fd06bdc6c24c[m
+Author: vascode <vascodepssn@gamil.com>
+Date:   Fri Jul 24 16:13:08 2015 -0400
+
+    replace %data% in HTMLheaderName/HTMLheaderRole and append/prepend
+
+[33mcommit d969b0dcad2787c7c52098a7988dd37b5b657110[m
+Author: vascode <vascodepssn@gmail.com>
+Date:   Thu Jul 23 21:15:20 2015 -0400
+
+    practice .repalce with jQuery
+
+[33mcommit 2568049bd7e491ffb6e2641c8b6a6eaaa631dfb1[m
+Author: cameronwp <cameron.w.pittman@gmail.com>
+Date:   Wed Jul 1 11:26:32 2015 -0700
+
+    fix(syntax): updated syntax to meet Udacity style guide
+
+[33mcommit 603c0b77ad8f538d824d924add420bc36bb3e2c8[m
+Merge: bdfe030 12524ac
+Author: Durant Schoon <durant@udacity.com>
+Date:   Mon Mar 2 14:53:27 2015 -0800
+
+    Merge pull request #29 from udacity/fixSpelling
+    
+    change HTMLWelcomeMsg -> HTMLwelcomeMsg
+
+[33mcommit 12524ac61e500344bd523e5f987cf6cdfe1a64b1[m
+Author: Durant Schoon <durant@udacity.com>
+Date:   Mon Mar 2 14:43:45 2015 -0800
+
+    change HTMLWelcomeMsg -> HTMLwelcomeMsg
+    
+    For consistency (a student flagged this).
+
+[33mcommit bdfe030adaa38a8482183f838719263f6efb9c75[m
+Merge: c8540b8 5272b6b
+Author: cameronwp <cameron.w.pittman@gmail.com>
+Date:   Thu Jan 8 16:23:52 2015 -0800
+
+    Merge branch 'master' of github.com:udacity/frontend-nanodegree-resume
+
+[33mcommit c8540b84f0304b9413d2c9b48c83e3b1283371a1[m
+Author: cameronwp <cameron.w.pittman@gmail.com>
+Date:   Thu Jan 8 16:23:28 2015 -0800
+
+    Reverted helper.js click handler for the internationalize button so that it no longer takes a parameter
+
+[33mcommit 5272b6b7817b84c510bc5eecec2dc1d441c14708[m
+Author: Cameron Pittman <cameron.w.pittman@gmail.com>
+Date:   Thu Jan 8 14:58:58 2015 -0800
+
+    Update README.md
+    
+    Fixed a typo in the description of the `bio` object.
+
+[33mcommit b2df7f5b81f458ebffe0363ad8eb4a9d6fab384f[m
+Author: Cameron Pittman <cameron.w.pittman@gmail.com>
+Date:   Thu Dec 18 23:10:09 2014 -0800
+
+    Update README.md
+
+[33mcommit 91a75e578646c947cdc3bd180fc19b1a6fab0d73[m
+Author: Cameron Pittman <cameron.w.pittman@gmail.com>
+Date:   Thu Dec 18 23:06:06 2014 -0800
+
+    Update README.md
+
+[33mcommit 7ac037abccec2efb23bb0fcc1e3eec28192dc4ae[m
+Author: Cameron Pittman <cameron.w.pittman@gmail.com>
+Date:   Thu Dec 18 23:03:23 2014 -0800
+
+    Update README.md
+
+[33mcommit 563a0cf7513c96ea3b2cdd0bbd148c07067512d1[m
+Author: cameronwp <cameron.w.pittman@gmail.com>
+Date:   Fri Dec 12 13:37:18 2014 -0800
+
+    <fix> update G Maps API to use lat() and lng() methods instead of private variables
+
+[33mcommit 715481c69f7d46c954543e4ff8c5a15e76b6d4d9[m
+Author: cameronwp <cameron.w.pittman@gmail.com>
+Date:   Thu Dec 11 10:49:40 2014 -0800
+
+    <fix> changed longitude property in createMapMarker() to reflect changes to the G Maps API
+
+[33mcommit 612a4557c52b777e36367846ef328ec6488ef848[m
+Author: cameronwp <cameron.w.pittman@gmail.com>
+Date:   Sun Dec 7 23:36:58 2014 -0800
+
+    <add> README.md
+
+[33mcommit 4f05ea929c29a68de97acc1f0602f9f3a4d7e006[m
+Merge: d5ab48f bcabf74
+Author: cameronwp <cameron.w.pittman@gmail.com>
+Date:   Sun Dec 7 10:07:35 2014 -0800
+
+    Merge branch 'master' of https://github.com/udacity/frontend-nanodegree-resume
+
+[33mcommit d5ab48fe1196a895f9a92b39b9a31ab0f928f334[m
+Author: cameronwp <cameron.w.pittman@gmail.com>
+Date:   Sun Dec 7 10:07:15 2014 -0800
+
+    <fix> resume bug fixes
+
+[33mcommit bcabf74c956c0180b70bead62fbe395025e75687[m
+Author: cameronwp <cameron.w.pittman@gmail.com>
+Date:   Sun Dec 7 09:47:55 2014 -0800
+
+    <fix> minor bug fixes
+
+[33mcommit 0373be649a60d67931f51b5267fafb53256da2c6[m
+Author: cameronwp <cameron.w.pittman@gmail.com>
+Date:   Sun Dec 7 09:47:55 2014 -0800
+
+    <fix> minor bug fixes
+
+[33mcommit b118431a246dc6d4f3432ac5b15549a9a45fb8ac[m
+Merge: 917f7dd bf8173a
+Author: cameronwp <cameron.w.pittman@gmail.com>
+Date:   Sun Dec 7 09:46:09 2014 -0800
+
+    merged JF <fix> bringing code up to Udacity standards
+
+[33mcommit a365f2d4b099a4752d1e7951db5dfaf52fb8cf49[m
+Merge: 36a88a8 1307ded
+Author: cameronwp <cameron.w.pittman@gmail.com>
+Date:   Sun Dec 7 09:46:09 2014 -0800
+
+    merged JF <fix> bringing code up to Udacity standards
+
+[33mcommit 917f7dd4e2edbf91a41ca44ba3b3b66baea19131[m
+Author: cameronwp <cameron.w.pittman@gmail.com>
+Date:   Sat Nov 29 22:03:33 2014 -0800
+
+    bug fixes. nicer css.
+
+[33mcommit 36a88a83ef065d6ff76782638e7a3517d8c5338e[m
+Author: cameronwp <cameron.w.pittman@gmail.com>
+Date:   Sat Nov 29 22:03:33 2014 -0800
+
+    bug fixes. nicer css.
+
+[33mcommit bf8173a6c39bd19d40a0148ce1348db7c5758746[m
+Author: Jacques Favreau <jacques@udacity.com>
+Date:   Mon Nov 10 19:16:46 2014 -0600
+
+    Fix(JS): Fix linting, vars,
+    
+    - Add missing semicolons.
+    - Remove extra semicolons.
+    - Add missing var declarations.
+    - Remove trailing space.
+    - Remove object literal quotes.
+    - Make quotes consistently used.
+
+[33mcommit 1307ded6f619d330e53322ebad998fe6a8ce06c7[m
+Author: Jacques Favreau <jacques@udacity.com>
+Date:   Mon Nov 10 19:16:46 2014 -0600
+
+    Fix(JS): Fix linting, vars,
+    
+    - Add missing semicolons.
+    - Remove extra semicolons.
+    - Add missing var declarations.
+    - Remove trailing space.
+    - Remove object literal quotes.
+    - Make quotes consistently used.
+
+[33mcommit 8f41365045622643078c9899fd1e2dac3df40064[m
+Author: Jacques Favreau <jacques@udacity.com>
+Date:   Mon Nov 10 19:12:16 2014 -0600
+
+    Fix(HTML): Fix indentation, style, and validation problems.
+    
+    - Closes HTML tag (currently missing)
+    - Adds title tag, and charset meta. Now is valid HTML.
+    - Fixes indentation
+    - Fix getElementById misunderstanding. Was set as ‘== undefined’ .
+    getElementById returns a null, not undefined.
+    - Fix javascript style for consistency.
+    - Add comment about loading the page styles to match the rest of the
+    page.
+
+[33mcommit 4521d32563ae9b8b4063e609a8bc5196a076ee21[m
+Author: Jacques Favreau <jacques@udacity.com>
+Date:   Mon Nov 10 19:12:16 2014 -0600
+
+    Fix(HTML): Fix indentation, style, and validation problems.
+    
+    - Closes HTML tag (currently missing)
+    - Adds title tag, and charset meta. Now is valid HTML.
+    - Fixes indentation
+    - Fix getElementById misunderstanding. Was set as ‘== undefined’ .
+    getElementById returns a null, not undefined.
+    - Fix javascript style for consistency.
+    - Add comment about loading the page styles to match the rest of the
+    page.
+
+[33mcommit 0409c77c0a68864a69426534ab99d428c06a4a88[m
+Author: Jacques Favreau <jacques@udacity.com>
+Date:   Mon Nov 10 18:40:06 2014 -0600
+
+    Fix(Styles): Fix style sheet
+    
+    - Remove extra lines
+    - Make markup consistent
+    - Replace font-style:bold with the actual intended markup of
+    font-weight: bold. Now actually works.
+
+[33mcommit dc6830cd9518041f6544c56d44469cd9e82165e4[m
+Author: Jacques Favreau <jacques@udacity.com>
+Date:   Mon Nov 10 18:40:06 2014 -0600
+
+    Fix(Styles): Fix style sheet
+    
+    - Remove extra lines
+    - Make markup consistent
+    - Replace font-style:bold with the actual intended markup of
+    font-weight: bold. Now actually works.
+
+[33mcommit 4f34079b4d1ad411dea164997ecab2bd0a8ce137[m
+Author: Cameron Pittman <cameron.w.pittman@gmail.com>
+Date:   Thu Sep 25 10:05:10 2014 -0700
+
+    added a missing semicolon to line 45
+
+[33mcommit 6093a098bac8329a2a1340b15ddca1172592dde5[m
+Author: Cameron Pittman <cameron.w.pittman@gmail.com>
+Date:   Thu Sep 25 10:05:10 2014 -0700
+
+    added a missing semicolon to line 45
+
+[33mcommit 0eeb7441e7a9a3ebeeccb20c52fb0c7fc397b1d3[m
+Author: Mike Wales <michael.wales@udacity.com>
+Date:   Tue Sep 23 19:29:08 2014 -0700
+
+    Initial project commit.
+
+[33mcommit 531fe6d037fba1a9199bff57255be1f1cbc509e8[m
+Author: Mike Wales <michael.wales@udacity.com>
+Date:   Tue Sep 23 19:29:08 2014 -0700
+
+    Initial project commit.
+
+[33mcommit 4ae9740dcb189827c6261bba952255c3f4f70898[m
+Author: Nicolas Artman <nicolasartman@users.noreply.github.com>
+Date:   Tue Sep 23 03:08:07 2014 -0700
+
+    Initial commit

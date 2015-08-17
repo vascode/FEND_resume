@@ -41,7 +41,7 @@ var HTMLworkEmployer = '<div class="title col-12"><a href="#">%data%';
 var HTMLworkTitle = ' - %data%</a></div>';
 var HTMLworkDates = '<div class="date-text col-6">%data%</div>';
 var HTMLworkLocation = '<div class="location-text col-6">%data%</div>';
-var HTMLworkDescription = '<p>%data%</p><br>';
+var HTMLworkDescription = '<p>%data%</p><br><br>';
 
 var HTMLprojectStart = '<div class="project-entry col-4 col-sm-12"></div>';
 var HTMLprojectTitle = '<div class="title"><a href="#">%data%</a></div>';
