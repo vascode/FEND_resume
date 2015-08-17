@@ -12,6 +12,100 @@ var bio = {
 	"bioPic": "images/myPic.png"
 };
 
+var skills = {
+	"techSkills":
+	[
+		{
+			"name": "HTML",
+			"ability": 60
+		},
+		{
+			"name": "CSS",
+			"ability": 50,
+		},
+		{
+			"name": "Javascript",
+			"ability": 40,
+		},
+		{
+			"name": "C++",
+			"ability": 60,
+		},
+		{
+			"name": "Python",
+			"ability": 60,
+		}
+	],
+	"langSkills":
+	[
+		{
+			"language": "Korean - navtive tongue",
+			"ability": 100
+		},
+		{
+			"language": "English - full proficiency",
+			"ability": 90
+		}
+	]
+};
+
+var work = {
+	"jobs":
+	[
+		{
+			"employer":"Laird Technologies",
+			"title":"Field Application Engineer",
+			"location":"Akron, OH",
+			"dates":"2010 - 2015",
+			"description":"troubleshoot WiFi and Bluetooth connectivity issues. 	worked with customers to integrate wifi + bluetooth radios, and trouble issues",
+			"URL": "http://lairdtech.com/"
+		},
+		{
+			"employer":"BioInVison",
+			"title":"Research Assistant",
+			"location":"Cleveland, OH",
+			"dates":"2009 - 2010",
+			"description":"operated Cryo-Imaging machine to capture sliced mice image in 3D",
+			"URL": "http://www.bioinvision.com/"
+		},
+		{
+			"employer":"Korean Military",
+			"title":"Sergent",
+			"location":"Yeoncheon, Korea",
+			"dates":"2003 - 2005",
+			"description":"worked in transportation department to transport vehicle components and organized them in stock",
+			"URL": "http://www.mnd.go.kr/mbshome/mbs/mnd_eng/"
+		}
+	]
+};
+
+var projects = {
+	"projects":
+	[
+		{
+			"title":"Garage Door Opener",
+			"dates":"2015",
+			"description":"Built upon Rasberry Pi to monitor and control garage door by using Pi camera and NPN transistor.",
+			"images":["images/project_LEGO1.jpg", "images/project_LEGO2.jpg"],
+			"progress": 80
+		},
+		{
+			"title":"Optical Coherence Tomograph(OCT) research",
+			"dates":"2010",
+			"description":"improved execution speed of OCT so that 2D images can be processed faster for making 3D image",
+			"images":["images/project_OCT1.jpg", "images/project_OCT2.jpg"],
+			"progress": 100
+		},
+		{
+			"title":"LEGO MINDSTORMS NTX project",
+			"dates":"2008",
+			"description":"Built a robot that detected an object, picked it up and brought it to a marked position. ",
+			"images":["images/project_LEGO1.jpg", "images/project_LEGO2.jpg"],
+			"progress": 100
+		}
+	]
+};
+
 bio.display = function(){
 
 	var formattedName = HTMLheaderName.replace("%data%", bio.name);
@@ -58,43 +152,6 @@ bio.display = function(){
 
 };
 
-var skills = {
-	"techSkills":
-	[
-		{
-			"name": "HTML",
-			"ability": 60
-		},
-		{
-			"name": "CSS",
-			"ability": 50,
-		},
-		{
-			"name": "Javascript",
-			"ability": 40,
-		},
-		{
-			"name": "Wi-Fi",
-			"ability": 90,
-		},
-		{
-			"name": "Bluetooth",
-			"ability": 80,
-		}
-	],
-	"langSkills":
-	[
-		{
-			"language": "Korean - navtive tongue",
-			"ability": 100
-		},
-		{
-			"language": "English - full proficiency",
-			"ability": 90
-		}
-	]
-}
-
 skills.display = function(){
 
 	for (var skill in skills.techSkills){
@@ -130,37 +187,6 @@ skills.display = function(){
 	}
 };
 
-var work = {
-	"jobs":
-	[
-		{
-			"employer":"Laird Technologies",
-			"title":"Field Application Engineer",
-			"location":"Akron, OH",
-			"dates":"2010 - 2015",
-			"description":"troubleshoot WiFi and Bluetooth connectivity issues. 	worked with customers to integrate wifi + bluetooth radios, and trouble issues",
-			"URL": "http://lairdtech.com/"
-		},
-		{
-			"employer":"BioInVison",
-			"title":"Research Assistant",
-			"location":"Cleveland, OH",
-			"dates":"2009 - 2010",
-			"description":"operated Cryo-Imaging machine to capture sliced mice image in 3D",
-			"URL": "http://www.bioinvision.com/"
-		},
-		{
-			"employer":"Korean Military",
-			"title":"Sergent",
-			"location":"Yeoncheon, Korea",
-			"dates":"2003 - 2005",
-			"description":"worked in transportation department to transport vehicle components and organized them in stock",
-			"URL": "http://www.mnd.go.kr/mbshome/mbs/mnd_eng/"
-		}
-	]
-};
-
-
 work.display = function() {
 	for (var job in work.jobs) {
 		$("#workExperience").append(HTMLworkStart);
@@ -187,33 +213,6 @@ work.display = function() {
 	}
 };
 
-var projects = {
-	"projects":
-	[
-		{
-			"title":"Garage Door Opener",
-			"dates":"2015",
-			"description":"Built upon Rasberry Pi to monitor and control garage door by using Pi camera and NPN transistor.",
-			"images":["images/project_LEGO1.jpg", "images/project_LEGO2.jpg"],
-			"progress": 80
-		},
-		{
-			"title":"Optical Coherence Tomograph(OCT) research",
-			"dates":"2010",
-			"description":"improved execution speed of OCT so that 2D images can be processed faster for making 3D image",
-			"images":["images/project_OCT1.jpg", "images/project_OCT2.jpg"],
-			"progress": 100
-		},
-		{
-			"title":"LEGO MINDSTORMS NTX project",
-			"dates":"2008",
-			"description":"Built a robot that detected an object, picked it up and brought it to a marked position. ",
-			"images":["images/project_LEGO1.jpg", "images/project_LEGO2.jpg"],
-			"progress": 100
-		}
-	]
-};
-
 projects.display = function() {
 
 	for (var project in projects.projects){
@@ -237,35 +236,6 @@ projects.display = function() {
 
 		var formattedDescription = HTMLprojectDescription.replace("%data%", projects.projects[project].description);
 		$("#" + div).append(formattedDescription);
-
-
-
-
-
-		//$("#projects").append(HTMLprojectStart);
-
-		//var div = 'div' + project;
-		//$(".project-entry:last").append('<div id=' + div + '></div>');
-		//$("#"+div).append('hi');
-
-/*
-		var formattedTitle = HTMLprojectTitle.replace("%data%", projects.projects[project].title);
-		$(".project-entry:last").append(formattedTitle);
-
-		var formattedDate = HTMLprojectDates.replace("%data%", projects.projects[project].dates);
-		$(".project-entry:last").append(formattedDate);
-
-		var formattedDescription = HTMLprojectDescription.replace("%data%", projects.projects[project].description);
-		$(".project-entry:last").append(formattedDescription);
-*/
-		/*
-		if (projects.projects[project].images.length > 0) {
-			for (image in projects.projects[project].images){
-				var formattedImage = HTMLprojectImage.replace("%data%", projects.projects[project].images[image]);
-				$(".project-entry:last").append(formattedImage);
-			}
-		}
-		*/
 	}
 };
 
@@ -301,10 +271,8 @@ education.display = function(){
 
 		var formattedName = HTMLschoolName.replace("%data%", education.schools[school].name)
 											.replace("#", education.schools[school].URL);
-		//$(".education-entry:last").append(formattedName);
 
 		var formattedDegree = HTMLschoolDegree.replace("%data%", education.schools[school].degree);
-		//$(".education-entry:last").append(formattedDegree);
 
 		var formattedNameDegree = formattedName + formattedDegree;
 		$(".education-entry:last").append(formattedNameDegree);
@@ -313,10 +281,6 @@ education.display = function(){
 		$(".education-entry:last").append(formattedDate);
 		var formattedLocation = HTMLschoolLocation.replace("%data%", education.schools[school].location);
 		$(".education-entry:last").append(formattedLocation);
-
-		//var formattedDateLocation = formattedDate + formattedLocation;
-		//$(".education-entry:last").append(formattedDateLocation);
-
 
 		var formattedMajor = HTMLschoolMajor.replace("%data%", education.schools[school].major);
 		$(".education-entry:last").append(formattedMajor);
@@ -346,8 +310,6 @@ education.display = function(){
 	}
 }
 
-
-
 //calling functions for page layout starts here.
 bio.display();
 skills.display();
@@ -359,6 +321,7 @@ $(document).ready(function(){
 	projects.display();
 });
 
+/*
 //$("#main").append(internationalizeButton);
 
 function inName(oldName) {
@@ -372,21 +335,7 @@ function inName(oldName) {
     // Don't delete this line!
     return finalName;
 }
-
 //var inter_name = inNmae("sebastian thrun");
 //$("#main").append(inter_name);
 
-
-
-
-
-/*
-for (project in projects.projects){
-	$("#projects").append(HTMLprojectStart);
-
-	var formattedTitle = HTMLprojectTitle.replace("%data%", projects.projects[project].title);
-
-	$(".project-entry:last").append(formattedTitle);
-
-}*/
-
+*/
